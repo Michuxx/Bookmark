@@ -1,0 +1,22 @@
+@use "../../colors.scss";
+
+.chapter-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.chapter {
+  width: 90%;
+  padding: 1rem;
+  border-bottom: 1px solid #dedde3;
+  color: colors.$neutral_grey;
+}
+
+.static-line {
+  width: 90%;
+  border-bottom: 1px solid #dedde3;
+}

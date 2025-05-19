@@ -2,8 +2,10 @@ import React from "react";
 import ManagerImage from "./ManagerImage";
 import ManagerInfo from "./ManagerInfo";
 import ButtonWrapper from "./ButtonWrapper";
-import imageTab1 from "/illustration-features-tab-1.svg";
+import imageTab1 from "/illustration-hero.svg";
+import imageTab2 from "/illustration-features-tab-1.svg";
 import "./manager.scss";
+import ChapterWrapper from "./ChapterWrapper";
 
 const Manager = () => {
   return (
@@ -21,6 +23,13 @@ const Manager = () => {
         headline="Feauters"
         description="Our aim is to make it quick and easy for oyu to access your favourite websites. 
         Your bookmarks sync between your devices so you can access them on the go."
+      ></ManagerInfo>
+      <ChapterWrapper />
+      <ManagerImage image={imageTab2} direction="left" />
+      <ManagerInfo
+        headline="Bookmark in one click"
+        description="Organize your bookmarks however you like. Our simple drag-and-pop interface gives 
+        your complete control over how you manage your favourite sites"
       ></ManagerInfo>
     </div>
   );

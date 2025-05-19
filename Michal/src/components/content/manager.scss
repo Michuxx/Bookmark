@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.manager-image-wrapper {
+.manager-right-image-wrapper {
   display: flex;
   justify-content: end;
   width: 100%;
@@ -18,28 +18,57 @@
   margin-top: 120px;
 }
 
-.right-image-background {
+.image-background-right {
   height: 170px;
   width: 70%;
   background-color: colors.$main_blue;
   border-radius: 30% 0 0 30%;
 }
 
-.manager-image {
+.manager-image-right {
   height: 100%;
+  width: 100%;
   position: absolute;
-  top: 15%;
+  top: 11%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-box-shadow: 0px 19px 34px -7px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 0px 19px 34px -7px rgba(66, 68, 90, 1);
-  box-shadow: 0px 19px 34px -7px rgba(66, 68, 90, 1);
 }
 
-.image-tab1 {
-  width: 280px;
-  object-fit: fill;
-  border: 10px solid black;
+.image-tab-right {
+  width: 100%;
+  height: 140%;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.manager-left-image-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 120px;
+}
+
+.image-background-left {
+  height: 170px;
+  width: 70%;
+  background-color: colors.$main_blue;
+  border-radius: 0 30% 30% 0;
+}
+
+.manager-image-left {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-tab-left {
+  width: 100%;
+  height: 110%;
+  object-fit: contain;
   border-radius: 10%;
 }
 
