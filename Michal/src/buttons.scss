@@ -1,0 +1,31 @@
+@use "./colors.scss";
+
+.blue-button {
+  color: white;
+  background-color: colors.$main_blue;
+  border-color: colors.$main_blue;
+}
+.white-button {
+  color: #5e5e66;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: -5px 3px 19px -11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -5px 3px 19px -11px rgba(66, 68, 90, 1);
+  box-shadow: -5px 3px 19px -11px rgba(66, 68, 90, 1);
+}
+.red-button {
+  color: white;
+  background-color: #fb5859;
+}
+
+.blue-button,
+.white-button,
+.red-button {
+  padding: 0.6rem;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  height: 2.6rem;
+  width: 40%;
+}

@@ -1,4 +1,13 @@
-@import "../../colors.scss";
+@use "../../colors.scss";
+
+.manager-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  min-height: 10rem;
+  flex-direction: column;
+}
 
 .manager-image-wrapper {
   display: flex;
@@ -9,18 +18,10 @@
   margin-top: 120px;
 }
 
-.manager-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  min-height: 10rem;
-}
-
 .right-image-background {
   height: 170px;
   width: 70%;
-  background-color: $main_blue;
+  background-color: colors.$main_blue;
   border-radius: 30% 0 0 30%;
 }
 
@@ -40,4 +41,41 @@
   object-fit: fill;
   border: 10px solid black;
   border-radius: 10%;
+}
+
+.manager-info-wrapper {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: colors.$neutral_navy;
+}
+
+.description {
+  margin-top: 20px;
+  text-align: center;
+  width: 90%;
+}
+
+.description p {
+  color: colors.$neutral_grey;
+  line-height: 2rem;
+  font-size: 1rem;
+}
+
+.manager-button-wrapper {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
