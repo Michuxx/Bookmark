@@ -1,13 +1,18 @@
 import React from "react";
-import imageTab1 from "/illustration-features-tab-1.svg";
 import "./manager.scss";
 
-const ManagerImage = () => {
+const ManagerImage = ({ image, direction }) => {
+  const styleMap = {
+    left: "left-image-background",
+    right: "right-image-background",
+  };
+
+  const imageBackgroundStyle = styleMap[direction];
   return (
     <div className="manager-image-wrapper">
-      <div className="right-image-background"></div>
+      <div className={imageBackgroundStyle}></div>
       <div className="manager-image">
-        <img src={imageTab1} alt="illustration-1" className="image-tab1" />
+        <img src={image} alt="illustration" className="image-tab1" />
       </div>
     </div>
   );
