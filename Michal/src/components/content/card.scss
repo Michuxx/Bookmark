@@ -1,0 +1,48 @@
+@use "../../colors.scss";
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.card-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 12px 28px -16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 1px 12px 28px -16px rgba(66, 68, 90, 1);
+  box-shadow: 1px 12px 28px -16px rgba(66, 68, 90, 1);
+  margin-bottom: 30px;
+}
+
+.browser-logo {
+  padding: 60px 20px 30px 20px;
+}
+
+.card-container h3 {
+  font-weight: 500;
+  color: colors.$neutral_navy;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.card-container p {
+  color: colors.$neutral_grey;
+  font-size: 0.8rem;
+  margin-bottom: 22px;
+}
+
+.dots {
+  padding: 16px 0 16px 0;
+}
+
+.card-container button {
+  width: 80%;
+  margin-bottom: 24px;
+}

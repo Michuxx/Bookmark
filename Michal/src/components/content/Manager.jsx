@@ -6,6 +6,7 @@ import imageTab1 from "/illustration-hero.svg";
 import imageTab2 from "/illustration-features-tab-1.svg";
 import "./manager.scss";
 import ChapterWrapper from "./ChapterWrapper";
+import CardWrapper from "./CardWrapper";
 
 const Manager = () => {
   return (
@@ -31,6 +32,13 @@ const Manager = () => {
         description="Organize your bookmarks however you like. Our simple drag-and-pop interface gives 
         your complete control over how you manage your favourite sites"
       ></ManagerInfo>
+      <div className="space"></div>
+      <ManagerInfo
+        headline="Download the extension"
+        description="We've got more browsers in the pipeline.
+      Please do let us know if you've got a favourite you'd like us to prioritize."
+      ></ManagerInfo>
+      <CardWrapper />
     </div>
   );
 };
