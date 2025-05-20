@@ -7,6 +7,7 @@ import imageTab2 from "/illustration-features-tab-1.svg";
 import "./manager.scss";
 import ChapterWrapper from "./ChapterWrapper";
 import CardWrapper from "./CardWrapper";
+import FaqWrapper from "./FaqWrapper";
 
 const Manager = () => {
   return (
@@ -39,6 +40,12 @@ const Manager = () => {
       Please do let us know if you've got a favourite you'd like us to prioritize."
       ></ManagerInfo>
       <CardWrapper />
+      <div className="space"></div>
+      <ManagerInfo
+        headline="Frequently Asked Questions"
+        description="Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us."
+      ></ManagerInfo>
+      <FaqWrapper />
     </div>
   );
 };
