@@ -2,6 +2,7 @@ import "./App.css";
 import Content from "./components/content/Content";
 import Manager from "./components/content/manager";
 import Header from "./components/header/Header";
+import Newslatter from "./components/newslatter/newslatter";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Content>
         <Manager />
       </Content>
+      <Newslatter />
     </div>
   );
 }
