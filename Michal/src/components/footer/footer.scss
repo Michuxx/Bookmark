@@ -1,9 +1,27 @@
+@use "../../colors.scss";
+
 .footer-wrapper {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: colors.$neutral_navy;
 }
 
 .footer-wrapper .logo-image {
   padding: 30px 0 30px 0;
+}
+
+.footer-options p {
+  padding-bottom: 30px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+
+.footer-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 40px;
 }
