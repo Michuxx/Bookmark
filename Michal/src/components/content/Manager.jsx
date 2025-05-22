@@ -12,14 +12,16 @@ import FaqWrapper from "./FaqWrapper";
 const Manager = () => {
   return (
     <div className="manager-wrapper">
-      <ManagerImage image={imageTab1} direction="right" />
-      <ManagerInfo
-        headline="A simple Bookmark Manager"
-        description="A clean and simple interface to organize your favourite websites. Open a
+      <div className="info-section">
+        <ManagerImage image={imageTab1} direction="right" />
+        <ManagerInfo
+          headline="A simple Bookmark Manager"
+          description="A clean and simple interface to organize your favourite websites. Open a
         new browser tab and see your sites load instantly. Try it for free"
-      >
-        <ButtonWrapper />
-      </ManagerInfo>
+        >
+          <ButtonWrapper />
+        </ManagerInfo>
+      </div>
       <div className="space"></div>
       <ManagerInfo
         headline="Feauters"
