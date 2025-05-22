@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import Logo from "./logo";
+import Logo from "./Logo";
 import Navbar from "./Navbar";
 import ExtendedNavbar from "./ExtendedNavbar";
 import "./navbar.scss";

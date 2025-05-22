@@ -3,7 +3,6 @@ import ManagerImage from "./ManagerImage";
 import ManagerInfo from "./ManagerInfo";
 import ButtonWrapper from "./ButtonWrapper";
 import imageTab1 from "/illustration-hero.svg";
-import imageTab2 from "/illustration-features-tab-1.svg";
 import "./manager.scss";
 import ChapterWrapper from "./ChapterWrapper";
 import CardWrapper from "./CardWrapper";
