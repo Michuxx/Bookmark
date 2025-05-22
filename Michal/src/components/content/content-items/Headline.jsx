@@ -7,6 +7,8 @@ const Headline = ({ children, type }) => {
     case "features":
       newStyle = "additional-features-headline-style";
       break;
+    case "managing":
+      newStyle = "additional-managing-headline-style";
   }
 
   return (

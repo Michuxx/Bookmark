@@ -20,3 +20,18 @@
   width: 90%;
   border-bottom: 1px solid #dedde3;
 }
+
+@media only screen and (min-width: 815px) {
+  .chapter-wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .chapter {
+    width: 20%;
+  }
+
+  .static-line {
+    display: none;
+  }
+}

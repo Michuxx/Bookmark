@@ -8,6 +8,7 @@ import "./manager.scss";
 import ChapterWrapper from "./ChapterWrapper";
 import CardWrapper from "./CardWrapper";
 import FaqWrapper from "./FaqWrapper";
+import Button from "./content-items/Button";
 
 const Manager = () => {
   return (
@@ -30,12 +31,19 @@ const Manager = () => {
         type="features"
       ></ManagerInfo>
       <ChapterWrapper />
-      <ManagerImage image={imageTab2} direction="left" />
-      <ManagerInfo
-        headline="Bookmark in one click"
-        description="Organize your bookmarks however you like. Our simple drag-and-pop interface gives 
+      <div className="info-section-2">
+        <ManagerImage image={imageTab2} direction="left" />
+        <ManagerInfo
+          type="managing"
+          headline="Bookmark in one click"
+          description="Organize your bookmarks however you like. Our simple drag-and-pop interface gives 
         your complete control over how you manage your favourite sites"
-      ></ManagerInfo>
+        >
+          <div className="more-info-button">
+            <Button type="blue">More Info</Button>
+          </div>
+        </ManagerInfo>
+      </div>
       <div className="space"></div>
       <ManagerInfo
         headline="Download the extension"

@@ -112,9 +112,14 @@
   margin-top: 6rem;
 }
 
+.more-info-button {
+  display: none;
+}
+
 @media only screen and (min-width: 815px) {
   .manager-info-wrapper {
     margin-left: 5%;
+    justify-content: center;
   }
 
   .headline h1 {
@@ -145,6 +150,11 @@
     height: 400px;
   }
 
+  .image-background-left {
+    height: 300px;
+    border-radius: 0 40% 40% 0;
+  }
+
   .additional-features-headline-style {
     text-align: center !important;
     font-size: 2rem !important;
@@ -158,5 +168,22 @@
   .additional-features-description-style {
     display: flex;
     justify-content: center;
+  }
+
+  .additional-managing-headline-style {
+    font-size: 2rem !important;
+  }
+  .additional-managing-headline-style p {
+    font-size: 1.35rem;
+  }
+
+  .more-info-button {
+    width: 100%;
+    display: block;
+  }
+
+  .more-info-button button {
+    width: 6rem;
+    margin: 20px 0 0 30px;
   }
 }
