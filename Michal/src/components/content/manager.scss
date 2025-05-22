@@ -144,4 +144,19 @@
   .image-tab-right {
     height: 400px;
   }
+
+  .additional-features-headline-style {
+    text-align: center !important;
+    font-size: 2rem !important;
+  }
+
+  .additional-features-description-style p {
+    width: 60%;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .additional-features-description-style {
+    display: flex;
+    justify-content: center;
+  }
 }

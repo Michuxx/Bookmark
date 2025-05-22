@@ -3,11 +3,11 @@ import "./manager.scss";
 import Headline from "./content-items/Headline";
 import Description from "./content-items/Description";
 
-const ManagerInfo = ({ children, headline, description }) => {
+const ManagerInfo = ({ children, headline, description, type }) => {
   return (
     <div className="manager-info-wrapper">
-      <Headline>{headline}</Headline>
-      <Description>{description}</Description>
+      <Headline type={type}>{headline}</Headline>
+      <Description type={type}>{description}</Description>
       {children}
     </div>
   );
