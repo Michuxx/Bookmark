@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import arrow from "/icon-arrow.svg";
+import ArrowIcon from "../../assets/icon-arrow.svg?react";
 
 const FaqInfo = ({ faq }) => {
   const [isDroped, setIsDroped] = useState(false);
@@ -12,24 +12,15 @@ const FaqInfo = ({ faq }) => {
     <div className="faq-container">
       <div className="question-dropdown">
         <h5>{faq.title}</h5>
-        <svg
+        <ArrowIcon
           onClick={dropDown}
-          xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="12"
           style={{
             cursor: "pointer",
+            color: isDroped ? "#F25F3A" : "#5267DF",
             transform: isDroped ? "rotate(180deg)" : "rotate(0deg)",
-            transition: "transform 0.2s",
+            transition: "transform 0.2s ease",
           }}
-        >
-          <path
-            fill="none"
-            stroke={isDroped ? "#F25F3A" : "#5267DF"}
-            strokeWidth="3"
-            d="M1 1l8 8 8-8"
-          />
-        </svg>
+        />
       </div>
       {isDroped && <p>{faq.description}</p>}
     </div>

@@ -1,11 +1,22 @@
 import React from "react";
-import logo from "/logo-bookmark.svg";
+import LogoSVG from "../../assets/logo-bookmark.svg?react";
+
 import "./header.scss";
 
-const Logo = () => {
+const Logo = ({ color }) => {
+  let textColor = "";
+  switch (color) {
+    case "white":
+      textColor = "#FFF";
+      break;
+    case "black":
+      textColor = "black";
+      break;
+  }
+
   return (
     <div className="logo-image">
-      <img src={logo} alt="logo" />
+      <LogoSVG style={{ color: textColor }} />
     </div>
   );
 };

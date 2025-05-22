@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <header>
-      <Logo />
+      <Logo color="black" />
       <Navbar />
     </header>
   );
