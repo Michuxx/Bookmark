@@ -4,9 +4,9 @@ import Manager from "./components/content/manager";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Newslatter from "./components/newslatter/newslatter";
-import Logo from "./components/header/Logo";
 import FooterOptions from "./components/footer/FooterOptions";
 import FooterIcons from "./components/footer/FooterIcons";
+import Logo from "./components/header/logo";
 
 function App() {
   return (

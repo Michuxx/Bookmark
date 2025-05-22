@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ManagerImage from "./ManagerImage";
 import ManagerInfo from "./ManagerInfo";
 import ButtonWrapper from "./ButtonWrapper";
@@ -9,8 +9,14 @@ import ChapterWrapper from "./ChapterWrapper";
 import CardWrapper from "./CardWrapper";
 import FaqWrapper from "./FaqWrapper";
 import Button from "./content-items/Button";
+import { DUMMY_CHAPTERS } from "../../assets/DUMMY_CHAPTERS";
 
 const Manager = () => {
+  const [activeChapter, setActiveChapter] = useState("bookmarking");
+
+  const handleChapterChange = (chapter) => {
+    setActiveChapter(chapter);
+  };
   return (
     <div className="manager-wrapper">
       <div className="info-section">
@@ -30,14 +36,19 @@ const Manager = () => {
         Your bookmarks sync between your devices so you can access them on the go."
         type="features"
       ></ManagerInfo>
-      <ChapterWrapper />
+      <ChapterWrapper
+        handleChangeChapter={handleChapterChange}
+        activeChapter={activeChapter}
+      />
       <div className="info-section-2">
-        <ManagerImage image={imageTab2} direction="left" />
+        <ManagerImage
+          image={DUMMY_CHAPTERS[activeChapter].img}
+          direction="left"
+        />
         <ManagerInfo
           type="managing"
-          headline="Bookmark in one click"
-          description="Organize your bookmarks however you like. Our simple drag-and-pop interface gives 
-        your complete control over how you manage your favourite sites"
+          headline={DUMMY_CHAPTERS[activeChapter].title}
+          description={DUMMY_CHAPTERS[activeChapter].description}
         >
           <div className="more-info-button">
             <Button type="blue">More Info</Button>
