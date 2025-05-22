@@ -8,7 +8,7 @@ const Description = ({ children, type }) => {
       newStyle = "additional-features-description-style";
       break;
     case "managing":
-      newStyle = "additional-managing-headline-style";
+      newStyle = "additional-managing-description-style";
   }
 
   return (

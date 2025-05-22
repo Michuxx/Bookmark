@@ -33,3 +33,29 @@
   width: 80%;
   margin-bottom: 35px;
 }
+
+@media only screen and (min-width: 815px) {
+  .newslatter-wrapper h1 {
+    width: 23rem;
+    font-size: 1.8rem;
+  }
+
+  .newslatter-wrapper input {
+    width: 65%;
+    margin: 0;
+  }
+  .newslatter-wrapper button {
+    width: 30%;
+    height: 2.2rem;
+    margin: 0;
+  }
+
+  .newslatter-form-wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 23rem;
+    justify-content: space-between;
+  }
+}

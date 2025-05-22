@@ -9,6 +9,7 @@ const Headline = ({ children, type }) => {
       break;
     case "managing":
       newStyle = "additional-managing-headline-style";
+      break;
   }
 
   return (

@@ -46,6 +46,7 @@ const Manager = () => {
       </div>
       <div className="space"></div>
       <ManagerInfo
+        type="features"
         headline="Download the extension"
         description="We've got more browsers in the pipeline.
       Please do let us know if you've got a favourite you'd like us to prioritize."
@@ -53,6 +54,7 @@ const Manager = () => {
       <CardWrapper />
       <div className="space"></div>
       <ManagerInfo
+        type="features"
         headline="Frequently Asked Questions"
         description="Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us."
       ></ManagerInfo>

@@ -32,3 +32,26 @@
   padding: 10px 0 20px 0;
   line-height: 2rem;
 }
+
+@media only screen and (min-width: 815px) {
+  .additional-faq-headline-style {
+    width: 60%;
+  }
+
+  .faq-container {
+    width: 55%;
+  }
+
+  .faq-container p {
+    font-size: 1rem;
+  }
+
+  .question-dropdown h5 {
+    font-size: 1.3rem;
+  }
+
+  .faq-wrapper button {
+    margin: 40px 0 60px 0;
+    width: 6rem;
+  }
+}
