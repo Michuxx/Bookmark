@@ -59,7 +59,7 @@
 
   @for $i from 1 through 3 {
     .card-container:nth-child(#{$i}) {
-      margin-top: #{($i - 1) * 60}px;
+      margin-top: #{($i - 1) * 90}px;
     }
   }
 }

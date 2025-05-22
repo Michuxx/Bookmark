@@ -1,0 +1,27 @@
+.extended-navbar-wrapper {
+  display: none;
+}
+
+.extended-navbar-wrapper p {
+  font-weight: 400;
+  color: hsl(229, 8%, 60%);
+  font-size: 0.8rem;
+}
+
+.extended-navbar-wrapper button {
+  height: 80%;
+  width: 6rem;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 815px) {
+  .extended-navbar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .simple-navbar {
+    display: none;
+  }
+}

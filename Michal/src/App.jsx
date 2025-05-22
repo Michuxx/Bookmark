@@ -17,8 +17,10 @@ function App() {
       </Content>
       <Newslatter />
       <Footer>
-        <Logo color="white" />
-        <FooterOptions />
+        <div className="logo-wrapper">
+          <Logo color="white" />
+          <FooterOptions />
+        </div>
         <FooterIcons />
       </Footer>
     </div>

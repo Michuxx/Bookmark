@@ -4,7 +4,7 @@ import hamburget_logo from "/icon-hamburger.svg";
 const Navbar = () => {
   return (
     <>
-      <img src={hamburget_logo} alt="navbar-logo" />
+      <img src={hamburget_logo} alt="navbar-logo" className="simple-navbar" />
     </>
   );
 };
